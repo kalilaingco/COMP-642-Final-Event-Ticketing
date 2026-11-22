@@ -34,4 +34,4 @@ WHERE ticket_type_id = 12;
 INSERT INTO payments (order_id, amount, method, status)
 VALUES (currval('orders_order_id_seq'), 2000.00, 'card', 'succeeded');
 
-ROLLBACK;
+COMMIT;
